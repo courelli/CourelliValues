@@ -135,30 +135,12 @@ questions = [
         }
     },
     {
-        "question": "The United Nations should be abolished.",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
-        }
-    },
-    {
         "question": "Military action by our nation is often necessary to protect it.",
         "effect": {
             "econ": 0,
             "dipl": -10,
             "govt": -10,
             "scty": 0
-        }
-    },
-    {
-        "question": "I support regional unions, such as the European Union.",
-        "effect": {
-            "econ": -5,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 5
         }
     },
     {
@@ -369,15 +351,6 @@ questions = [
         }
     },
     {
-        "question": "Democracy is more than a decision-making process.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
         "question": "Environmental regulations are essential.",
         "effect": {
             "econ": 5,
@@ -495,15 +468,6 @@ questions = [
         }
     },
     {
-        "question": "Same-sex marriage should be legal.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 10
-        }
-    },
-    {
         "question": "No cultures are superior to others.",
         "effect": {
             "econ": 0,
@@ -531,24 +495,6 @@ questions = [
         }
     },
     {
-        "question": "Abortion should be prohibited in most or all cases.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Gun ownership should be prohibited for those without a valid reason.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
         "question": "I support single-payer, universal healthcare.",
         "effect": {
             "econ": 10,
@@ -568,15 +514,6 @@ questions = [
     },
     {
         "question": "Maintaining family values is essential.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "To chase progress at all costs is dangerous.",
         "effect": {
             "econ": 0,
             "dipl": 0,
@@ -620,13 +557,4 @@ questions = [
             "scty": 10
         }
     },
-    {
-        "question": "It is important that we further my group's goals above all others.",
-        "effect": {
-            "econ": -10,
-            "dipl": -10,
-            "govt": -10,
-            "scty": -10
-        }
-    }
 ];
