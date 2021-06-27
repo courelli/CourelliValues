@@ -1,110 +1,110 @@
 ideologies = [
     {
-        "name": "World Workers Party",
+        "name": "World Workers Party", // "Marxism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 100,
+            "dipl": 70,
+            "govt": 70,
+            "scty": 70
         }
     },
     {
-        "name": "United Left Party",
+        "name": "United Left Party", // "Democratic Socialism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 80,
+            "dipl": 50,
+            "govt": 50,
+            "scty": 80
         }
     },
     {
-        "name": "Social Democratic Party",
+        "name": "Social Democratic Party", // "Social Democracy"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 60,
+            "dipl": 70,
+            "govt": 60,
+            "scty": 80
         }
     },
     {
-        "name": "Liberal Party",
+        "name": "Liberal Party", // "Liberalism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 50,
+            "dipl": 60,
+            "govt": 60,
+            "scty": 60
         }
     },
     {
-        "name": "Green Party",
+        "name": "Green Party", // "Technocracy"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 60,
+            "dipl": 60,
+            "govt": 80,
+            "scty": 70
         }
     },
     {
-        "name": "Unity Party",
+        "name": "Unity Party", // "Centrism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 50,
+            "dipl": 50,
+            "govt": 50,
+            "scty": 50
         }
     },
     {
-        "name": "One Courelli Party",
+        "name": "One Courelli Party", // "Neo-Liberalism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 30,
+            "dipl": 30,
+            "govt": 50,
+            "scty": 60
         }
     },
     {
-        "name": "Liberty Party",
+        "name": "Liberty Party", // "Ultra-Capitalism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 0,
+            "dipl": 40,
+            "govt": 50,
+            "scty": 50
         }
     },
     {
-        "name": "Conservaive Party",
+        "name": "Conservative Party", // "Conservatism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 30,
+            "dipl": 40,
+            "govt": 40,
+            "scty": 20
         }
     },
     {
-        "name": "National Front",
+        "name": "National Front", // "Capitalist Fascism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 20,
+            "dipl": 20,
+            "govt": 20,
+            "scty": 20
         }
     },
     {
-        "name": "Dalinian Alliance",
+        "name": "Dalinian Alliance", // "Fundamentalism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 20,
+            "dipl": 30,
+            "govt": 30,
+            "scty": 5
         }
     },
     {
-        "name": "Afafanua National Party",
+        "name": "Afafanua National Party", // "Right-Wing Populism"
         "stats": {
-            "econ": ,
-            "dipl": ,
-            "govt": ,
-            "scty": 
+            "econ": 40,
+            "dipl": 20,
+            "govt": 30,
+            "scty": 50
         }
     },
 ];
