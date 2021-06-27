@@ -450,15 +450,6 @@ questions = [
         }
     },
     {
-        "question": "Reason is more important than maintaining our culture.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
         "question": "Drug use should be legalized or decriminalized.",
         "effect": {
             "econ": 0,
@@ -501,15 +492,6 @@ questions = [
             "dipl": 0,
             "govt": 0,
             "scty": 0
-        }
-    },
-    {
-        "question": "Prostitution should be illegal.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
         }
     },
     {
