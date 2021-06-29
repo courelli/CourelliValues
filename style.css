@@ -267,12 +267,12 @@ div.imperialist {
     border-right-style: solid;
 }
 div.diplomatic {
-    background-color: #336600;
+    background-color: #339999;
     text-align: right;
     border-left-style: solid;
 }
 div.ecological {
-    background-color: #339999;
+    background-color: #009933;
     text-align: left;
     border-right-style: solid;
 }
