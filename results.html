@@ -227,26 +227,30 @@ stats"></a></div></noscript>
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
-        c.height = 650;
+        c.height = 800;
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,650);
+        ctx.fillRect(0,0,800,800);
 
-        img = document.getElementById("img-equality")
+        img = document.getElementById("img-socialist")
         ctx.drawImage(img, 20, 170, 100, 100);
-        img = document.getElementById("img-wealth")
+        img = document.getElementById("img-capitalist")
         ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-might")
+        img = document.getElementById("img-democratic")
         ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-peace")
+        img = document.getElementById("img-authoritarian")
         ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-liberty")
+        img = document.getElementById("img-centralized")
         ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-authority")
+        img = document.getElementById("img-decentralized")
         ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-tradition")
+        img = document.getElementById("img-secular")
         ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-progress")
+        img = document.getElementById("img-religious")
         ctx.drawImage(img, 680, 530, 100, 100)
+	img = document.getElementById("img-progressive")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-conservative")
+        ctx.drawImage(img, 680, 650, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
