@@ -201,45 +201,85 @@ div.text-wrapper {
     color: #222222;
     display: inline-block;
 }
-div.equality {
-    background-color: #f44336;
+div.socialist {
+    background-color: #990000;
     text-align: left;
     border-right-style: solid;
 }
-div.markets {
-    background-color: #00897b;
+div.democratic {
+    background-color: #339999;
     text-align: right;
     border-left-style: solid;
 }
-div.liberty {
-    background-color: #ffeb3b;
+div.authoritarian {
+    background-color: #999999;
     text-align: left;
     border-right-style: solid;
 }
-div.authority {
-    background-color: #3f51b5;
+div.capitalist {
+    background-color: #336600;
     text-align: right;
     border-left-style: solid;
 }
-div.globe {
-    background-color: #03a9f4;
-    text-align: right;
-    border-left-style: solid;
-}
-div.nation {
-    background-color: #ff9800;
+div.centralized {
+    background-color: #A82626;
     text-align: left;
     border-right-style: solid;
 }
-div.progress {
-    background-color: #9c27b0;
+div.decentralized {
+    background-color: #CCCCCC;
     text-align: right;
     border-left-style: solid;
 }
-div.tradition {
-    background-color: #8bc34a;
+div.secular {
+    background-color: #CC9900;
     text-align: left;
     border-right-style: solid;
+}
+div.religious {
+    background-color: #663399;
+    text-align: right;
+    border-left-style: solid;
+}
+div.progressive {
+    background-color: #CC0099;
+    text-align: left;
+    border-right-style: solid;
+}
+div.conservative {
+    background-color: #3F51B5;
+    text-align: right;
+    border-left-style: solid;
+}
+div.internationalist {
+    background-color: #5B92E5;
+    text-align: left;
+    border-right-style: solid;
+}
+div.isolationist {
+    background-color: #996633;
+    text-align: right;
+    border-left-style: solid;
+}
+div.imperialist {
+    background-color: #993333;
+    text-align: left;
+    border-right-style: solid;
+}
+div.diplomatic {
+    background-color: #336600;
+    text-align: right;
+    border-left-style: solid;
+}
+div.ecological {
+    background-color: #339999;
+    text-align: left;
+    border-right-style: solid;
+}
+div.industrial {
+    background-color: #606060;
+    text-align: right;
+    border-left-style: solid;
 }
 span.weight-300 {
     font-weight: 300;
