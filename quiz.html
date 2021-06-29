@@ -48,19 +48,28 @@ stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_econ, max_dipl, max_govt, max_scty; // Max possible scores
-    max_econ = max_dipl = max_govt = max_scty = 0;
+    var max_econ, max_govt, max_cent, max_relg, max_socl, max_natl, max_milt, max_ecol; // Max possible scores
+    max_econ = max_govt = max_cent = max_relg = max_socl = max_natl = max_milt = max_ecol = = 0;
     let econ_array = new Array(questions.length);
-    let dipl_array = new Array(questions.length);
     let govt_array = new Array(questions.length);
-    let scty_array = new Array(questions.length);
+    let cent_array = new Array(questions.length);
+    let relg_array = new Array(questions.length);
+    let socl_array = new Array(questions.length);
+    let natl_array = new Array(questions.length);
+    let milt_array = new Array(questions.length);
+    let ecol_array = new Array(questions.length);
+  
     var qn = 0; // Question number
     init_question();
     for (var i = 0; i < questions.length; i++) {
         max_econ += Math.abs(questions[i].effect.econ)
-        max_dipl += Math.abs(questions[i].effect.dipl)
         max_govt += Math.abs(questions[i].effect.govt)
-        max_scty += Math.abs(questions[i].effect.scty)
+        max_cent += Math.abs(questions[i].effect.cent)
+        max_relg += Math.abs(questions[i].effect.relg)
+        max_socl += Math.abs(questions[i].effect.socl)
+        max_natl += Math.abs(questions[i].effect.natl)
+        max_milt += Math.abs(questions[i].effect.milt)
+        max_ecol += Math.abs(questions[i].effect.ecol)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -77,9 +86,13 @@ stats"></a></div></noscript>
 
     function next_question(mult) {
         econ_array[qn] = mult*questions[qn].effect.econ
-        dipl_array[qn] = mult*questions[qn].effect.dipl
         govt_array[qn] = mult*questions[qn].effect.govt
-        scty_array[qn] = mult*questions[qn].effect.scty
+        cent_array[qn] = mult*questions[qn].effect.cent
+        relg_array[qn] = mult*questions[qn].effect.relg
+        socl_array[qn] = mult*questions[qn].effect.socl
+        natl_array[qn] = mult*questions[qn].effect.natl
+        milt_array[qn] = mult*questions[qn].effect.milt
+        ecol_array[qn] = mult*questions[qn].effect.ecol
         qn++;
         if (qn < questions.length) {
             init_question();
