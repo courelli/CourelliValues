@@ -206,20 +206,20 @@ div.socialist {
     text-align: left;
     border-right-style: solid;
 }
-div.democratic {
-    background-color: #339999;
+div.capitalist {
+    background-color: #336600;
     text-align: right;
     border-left-style: solid;
+}
+div.democratic {
+    background-color: #339999;
+    text-align: left;
+    border-right-style: solid;
 }
 div.authoritarian {
     background-color: #999999;
     text-align: left;
     border-right-style: solid;
-}
-div.capitalist {
-    background-color: #336600;
-    text-align: right;
-    border-left-style: solid;
 }
 div.centralized {
     background-color: #A82626;
