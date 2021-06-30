@@ -28,23 +28,23 @@
     <div class="bar capitalist" id="bar-capitalist"><div class="text-wrapper" id="capitalist"></div></div>
     <img id="img-capitalist" src="value_images/capitalist.svg" height="128pt"/>
 </div>
+<h2>Involvement Axis: <span class="weight-300" id="involvement-label"></span></h2>
+<div class="axis">
+<!-- Populist -->
+    <img id="img-populist" src="value_images/populist.svg" height="128pt"/>
+    <div class="bar populist" id="bar-populist"><div class="text-wrapper" id="populist"></div></div>
+<!-- Elitist -->
+    <div class="bar elitist" id="bar-elitist"><div class="text-wrapper" id="elitist"></div></div>
+    <img id="img-elitist" src="value_images/elitist.svg" height="128pt"/>
+</div>
 <h2>Government Axis: <span class="weight-300" id="government-label"></span></h2>
 <div class="axis">
-<!-- Democratic -->
-    <img id="img-democratic" src="value_images/democratic.svg" height="128pt"/>
-    <div class="bar democratic" id="bar-democratic"><div class="text-wrapper" id="democratic"></div></div>
-<!-- Authoritarian -->
-    <div class="bar authoritarian" id="bar-authoritarian"><div class="text-wrapper" id="authoritarian"></div></div>
-    <img id="img-authoritarian" src="value_images/authoritarian.svg" height="128pt"/>
-</div>
-<h2>Centralization Axis: <span class="weight-300" id="centralization-label"></span></h2>
-<div class="axis">
-<!-- Centralized -->
-    <img id="img-centralized" src="value_images/centralized.svg" height="128pt"/>
-    <div class="bar centralized" id="bar-centralized"><div class="text-wrapper" id="centralized"></div></div>
-<!-- Decentralized -->
-    <div class="bar decentralized" id="bar-decentralized"><div class="text-wrapper" id="decentralized"></div></div>
-    <img id="img-decentralized" src="value_images/decentralized.svg" height="128pt"/>
+<!-- Unitary -->
+    <img id="img-unitary" src="value_images/unitary.svg" height="128pt"/>
+    <div class="bar unitary" id="bar-unitary"><div class="text-wrapper" id="unitary"></div></div>
+<!-- Devolved -->
+    <div class="bar devolved" id="bar-devolved"><div class="text-wrapper" id="devolved"></div></div>
+    <img id="img-devolved" src="value_images/devolved.svg" height="128pt"/>
 </div>
 <h2>Religion Axis: <span class="weight-300" id="religion-label"></span></h2>
 <div class="axis">
@@ -136,8 +136,8 @@ stats"></a></div></noscript>
     }
 
     econArray = ["Communist",        "Socialist",        "Social Democrat", "Neutral", "Liberal",    "Laissez-Faire", "Capitalist"]
-    govtArray = ["Direct Democrat",  "Populist",         "Parliamentarist", "Neutral", "Republican", "Oligarchist",   "Orwellian"]
-    centArray = ["Totalitarian",     "Authoritarian",    "Statist",         "Neutral", "Liberal",    "Libertarian",   "Anarchist"]
+    poplArray = ["Direct Democrat",  "Populist",         "Liberal",         "Neutral", "Republican", "Aristocrat",    "Monarchist"]
+    unitArray = ["Centralist",       "Statist",          "Legalist",        "Neutral", "Liberal",    "Libertarian",   "Anarchist"]
     relgArray = ["Militant Atheist", "Secularist",       "Skeptic",         "Neutral", "Religious",  "Devout",        "Fundamentalist"]
     soclArray = ["Revolutionary",    "Progressive",      "Reformist",       "Neutral", "Nostalgic",  "Conservative",  "Reactionary"]
     natlArray = ["Cosmopolitan",     "Internationalist", "Peaceful",        "Neutral", "Patriotic",  "Nationalist",   "Chauvinist"]
@@ -157,8 +157,8 @@ stats"></a></div></noscript>
     }
 
     socialist        = getQueryVariable("soc")
-    democratic       = getQueryVariable("dem")
-    centralized      = getQueryVariable("cen")
+    populist         = getQueryVariable("pop")
+    unitary          = getQueryVariable("unt")
     secular          = getQueryVariable("sec")
     progressive      = getQueryVariable("pro")
     internationalist = getQueryVariable("int")
@@ -166,8 +166,8 @@ stats"></a></div></noscript>
     ecological       = getQueryVariable("eco")
 	
     capitalist    = (100 - socialist       ).toFixed(1)
-    authoritarian = (100 - democratic      ).toFixed(1)
-    decentralized = (100 - centralized     ).toFixed(1)
+    elitist       = (100 - populist        ).toFixed(1)
+    devolved      = (100 - unitary         ).toFixed(1)
     religious     = (100 - secular         ).toFixed(1)
     conservative  = (100 - progressive     ).toFixed(1)
     isolationist  = (100 - internationalist).toFixed(1)
@@ -176,10 +176,10 @@ stats"></a></div></noscript>
 
     setBarValue("socialist", socialist)
     setBarValue("capitalist", capitalist)
-    setBarValue("democratic", democratic)
-    setBarValue("authoritarian", authoritarian)
-    setBarValue("centralized", centralized)
-    setBarValue("decentralized", decentralized)
+    setBarValue("populist", populist)
+    setBarValue("elitist", elitist)
+    setBarValue("unitary", unitary)
+    setBarValue("devolved", devolved)
     setBarValue("secular", secular)
     setBarValue("religious", religious)
     setBarValue("progressive", progressive)
@@ -192,8 +192,8 @@ stats"></a></div></noscript>
     setBarValue("industrial", industrial)	
 
     document.getElementById("economic-label").innerHTML = setLabel(socialist, econArray)
-    document.getElementById("government-label").innerHTML = setLabel(democratic, govtArray)
-    document.getElementById("centralization-label").innerHTML = setLabel(centralized, centArray)
+    document.getElementById("involvement-label").innerHTML = setLabel(populist, poplArray)
+    document.getElementById("government-label").innerHTML = setLabel(unitary, unitArray)
     document.getElementById("religion-label").innerHTML = setLabel(secular, relgArray)
     document.getElementById("social-label").innerHTML = setLabel(progressive, soclArray)
     document.getElementById("nationalism-label").innerHTML = setLabel(internationalist, natlArray)
@@ -205,8 +205,8 @@ stats"></a></div></noscript>
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - socialist), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - democratic), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.cent - centralized), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.popl - populist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.unit - unitary), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.relg - secular), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.socl - progressive), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.natl - internationalist), 2)
@@ -239,13 +239,13 @@ stats"></a></div></noscript>
         ctx.drawImage(img, 20, 170, 100, 100);
         img = document.getElementById("img-capitalist")
         ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-democratic")
+        img = document.getElementById("img-populist")
         ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-authoritarian")
+        img = document.getElementById("img-elitist")
         ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-centralized")
+        img = document.getElementById("img-unitary")
         ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-decentralized")
+        img = document.getElementById("img-devolved")
         ctx.drawImage(img, 680, 410, 100, 100)
         img = document.getElementById("img-secular")
         ctx.drawImage(img, 20, 530, 100, 100)
@@ -282,13 +282,13 @@ stats"></a></div></noscript>
 
         ctx.textAlign="left"
         if (socialist     > 30) {ctx.fillText(socialist     + "%", 130, 237.5)}
-        if (democratic    > 30) {ctx.fillText(democratic    + "%", 130, 357.5)}
-        if (centralized   > 30) {ctx.fillText(centralized   + "%", 130, 477.5)}
+        if (populist      > 30) {ctx.fillText(populist      + "%", 130, 357.5)}
+        if (unitary       > 30) {ctx.fillText(unitary       + "%", 130, 477.5)}
         if (secular       > 30) {ctx.fillText(secular       + "%", 130, 597.5)}
         ctx.textAlign="right"
         if (capitalism    > 30) {ctx.fillText(capitalism    + "%", 670, 237.5)}
-        if (authoritarian > 30) {ctx.fillText(authoritarian + "%", 670, 357.5)}
-        if (decentralized > 30) {ctx.fillText(decentralized + "%", 670, 477.5)}
+        if (elitist       > 30) {ctx.fillText(elitist       + "%", 670, 357.5)}
+        if (devolved      > 30) {ctx.fillText(devolved      + "%", 670, 477.5)}
         if (religious     > 30) {ctx.fillText(religious     + "%", 670, 597.5)}
 
         ctx.font="300 30px Montserrat"
@@ -296,8 +296,8 @@ stats"></a></div></noscript>
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
         ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
-        ctx.fillText("Government Axis: " + document.getElementById("government-label").innerHTML, 400, 295)
-        ctx.fillText("Centralization Axis: " + document.getElementById("centralization-label").innerHTML, 400, 415)
+        ctx.fillText("Involvement Axis: " + document.getElementById("involvement-label").innerHTML, 400, 295)
+        ctx.fillText("Government Axis: " + document.getElementById("government-label").innerHTML, 400, 415)
         ctx.fillText("Religion Axis: " + document.getElementById("religion-label").innerHTML, 400, 535)
 
         document.getElementById("banner").src = c.toDataURL();
