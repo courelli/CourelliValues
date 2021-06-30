@@ -48,27 +48,27 @@ stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_econ, max_popl, max_unit, max_relg, max_socl, max_natl, max_milt, max_ecol; // Max possible scores
-    max_econ = max_popl = max_unit = max_relg = max_socl = max_natl = max_milt = max_ecol = 0;
-    let econ_array = new Array(questions.length);
+    var max_socl, max_popl, max_unit, max_secl, max_prog, max_intr, max_impr, max_ecol; // Max possible scores
+    max_socl = max_popl = max_unit = max_secl = max_prog = max_intr = max_impr = max_ecol = 0;
+    let socl_array = new Array(questions.length);
     let popl_array = new Array(questions.length);
     let unit_array = new Array(questions.length);
-    let relg_array = new Array(questions.length);
-    let socl_array = new Array(questions.length);
-    let natl_array = new Array(questions.length);
-    let milt_array = new Array(questions.length);
+    let secl_array = new Array(questions.length);
+    let prog_array = new Array(questions.length);
+    let intr_array = new Array(questions.length);
+    let impr_array = new Array(questions.length);
     let ecol_array = new Array(questions.length);
   
     var qn = 0; // Question number
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_econ += Math.abs(questions[i].effect.econ)
+        max_socl += Math.abs(questions[i].effect.socl)
         max_popl += Math.abs(questions[i].effect.popl)
         max_unit += Math.abs(questions[i].effect.unit)
-        max_relg += Math.abs(questions[i].effect.relg)
-        max_socl += Math.abs(questions[i].effect.socl)
-        max_natl += Math.abs(questions[i].effect.natl)
-        max_milt += Math.abs(questions[i].effect.milt)
+        max_secl += Math.abs(questions[i].effect.secl)
+        max_prog += Math.abs(questions[i].effect.prog)
+        max_intr += Math.abs(questions[i].effect.intr)
+        max_impr += Math.abs(questions[i].effect.impr)
         max_ecol += Math.abs(questions[i].effect.ecol)
     }
     function init_question() {
@@ -85,13 +85,13 @@ stats"></a></div></noscript>
     }
 
     function next_question(mult) {
-        econ_array[qn] = mult*questions[qn].effect.econ
+        socl_array[qn] = mult*questions[qn].effect.socl
         popl_array[qn] = mult*questions[qn].effect.popl
         unit_array[qn] = mult*questions[qn].effect.unit
-        relg_array[qn] = mult*questions[qn].effect.relg
-        socl_array[qn] = mult*questions[qn].effect.socl
-        natl_array[qn] = mult*questions[qn].effect.natl
-        milt_array[qn] = mult*questions[qn].effect.milt
+        secl_array[qn] = mult*questions[qn].effect.secl
+        prog_array[qn] = mult*questions[qn].effect.prog
+        intr_array[qn] = mult*questions[qn].effect.intr
+        impr_array[qn] = mult*questions[qn].effect.impr
         ecol_array[qn] = mult*questions[qn].effect.ecol
         qn++;
         if (qn < questions.length) {
@@ -114,23 +114,23 @@ stats"></a></div></noscript>
     }
 
     function results() {
-        let final_econ = econ_array.reduce((a, b) => a + b, 0)
+        let final_socl = socl_array.reduce((a, b) => a + b, 0)
         let final_popl = popl_array.reduce((a, b) => a + b, 0)
         let final_unit = unit_array.reduce((a, b) => a + b, 0)
-        let final_relg = relg_array.reduce((a, b) => a + b, 0)
-        let final_socl = socl_array.reduce((a, b) => a + b, 0)
-        let final_natl = natl_array.reduce((a, b) => a + b, 0)
-        let final_milt = milt_array.reduce((a, b) => a + b, 0)
+        let final_secl = secl_array.reduce((a, b) => a + b, 0)
+        let final_prog = prog_array.reduce((a, b) => a + b, 0)
+        let final_intr = intr_array.reduce((a, b) => a + b, 0)
+        let final_impr = impr_array.reduce((a, b) => a + b, 0)
         let final_ecol = ecol_array.reduce((a, b) => a + b, 0)
 
         location.href = `results.html`
-            + `?soc=${calc_score(final_econ,max_econ)}`
+            + `?soc=${calc_score(final_socl,max_socl)}`
             + `&pop=${calc_score(final_popl,max_popl)}`
             + `&unt=${calc_score(final_unit,max_unit)}`
-            + `&sec=${calc_score(final_relg,max_relg)}`
-            + `&pro=${calc_score(final_socl,max_socl)}`
-            + `&int=${calc_score(final_natl,max_natl)}`
-            + `&imp=${calc_score(final_milt,max_milt)}`
+            + `&sec=${calc_score(final_secl,max_secl)}`
+            + `&pro=${calc_score(final_prog,max_prog)}`
+            + `&int=${calc_score(final_intr,max_intr)}`
+            + `&imp=${calc_score(final_impr,max_impr)}`
             + `&eco=${calc_score(final_ecol,max_ecol)}`
     }
 </script>
