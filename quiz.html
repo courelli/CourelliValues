@@ -115,14 +115,23 @@ stats"></a></div></noscript>
 
     function results() {
         let final_econ = econ_array.reduce((a, b) => a + b, 0)
-        let final_dipl = dipl_array.reduce((a, b) => a + b, 0)
         let final_govt = govt_array.reduce((a, b) => a + b, 0)
-        let final_scty = scty_array.reduce((a, b) => a + b, 0)
+        let final_cent = cent_array.reduce((a, b) => a + b, 0)
+        let final_relg = relg_array.reduce((a, b) => a + b, 0)
+        let final_socl = socl_array.reduce((a, b) => a + b, 0)
+        let final_natl = natl_array.reduce((a, b) => a + b, 0)
+        let final_milt = milt_array.reduce((a, b) => a + b, 0)
+        let final_ecol = ecol_array.reduce((a, b) => a + b, 0)
+
         location.href = `results.html`
-            + `?e=${calc_score(final_econ,max_econ)}`
-            + `&d=${calc_score(final_dipl,max_dipl)}`
-            + `&g=${calc_score(final_govt,max_govt)}`
-            + `&s=${calc_score(final_scty,max_scty)}`
+            + `?soc=${calc_score(final_econ,max_econ)}`
+            + `&dem=${calc_score(final_govt,max_govt)}`
+            + `&cent=${calc_score(final_cent,max_cent)}`
+            + `&sec=${calc_score(final_relg,max_relg)}`
+            + `&pro=${calc_score(final_socl,max_socl)}`
+            + `&int=${calc_score(final_natl,max_natl)}`
+            + `&imp=${calc_score(final_milt,max_milt)}`
+            + `&eco=${calc_score(final_ecol,max_ecol)}`
     }
 </script>
 </body>
