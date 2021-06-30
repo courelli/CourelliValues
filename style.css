@@ -210,21 +210,21 @@ div.capitalist {
     background-color: #336600;
     text-align: right;
 }
-div.democratic {
+div.populist {
     background-color: #339999;
     text-align: left;
     border-right-style: solid;
 }
-div.authoritarian {
+div.elitist {
     background-color: #999999;
     text-align: right;
 }
-div.centralized {
+div.unitary {
     background-color: #A82626;
     text-align: left;
     border-right-style: solid;
 }
-div.decentralized {
+div.devolved {
     background-color: #CCCCCC;
     text-align: right;
 }
