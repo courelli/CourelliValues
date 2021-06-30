@@ -301,66 +301,66 @@ questions = [
     {
         "question": "Research should be conducted on an international scale.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": 0,
+            "cent": 0,
+            "relg": 0,
+            "socl": 0,
+            "natl": 10,
+            "milt": -5,
+            "ecol": 0
         }
     },
     {
         "question": "Governments should be accountable to the international community.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": 0,
+            "cent": 0,
+            "relg": 0,
+            "socl": 5,
+            "natl": 10,
+            "milt": -10,
+            "ecol": 0
         }
     },
     {
         "question": "Even when protesting an authoritarian government, violence is not acceptable.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": -5,
+            "cent": 0,
+            "relg": 0,
+            "socl": -10,
+            "natl": 0,
+            "milt": 0,
+            "ecol": 0
         }
     },
     {
         "question": "My religious values should be spread as much as possible.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": 0,
+            "cent": 0,
+            "relg": -10,
+            "socl": -5,
+            "natl": 0,
+            "milt": 10,
+            "ecol": 0
         }
     },
     {
         "question": "Our nation's values should be spread as much as possible.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": 0,
+            "cent": 0,
+            "relg": 0,
+            "socl": -5,
+            "natl": -10,
+            "milt": 10,
+            "ecol": 0
         }
     },
     {
@@ -379,40 +379,40 @@ questions = [
     {
         "question": "The general populace makes poor decisions.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": -10,
+            "cent": 0,
+            "relg": 0,
+            "socl": -10,
+            "natl": 0,
+            "milt": 0,
+            "ecol": 0
         }
     },
     {
         "question": "Physician-assisted suicide should be legal.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": 0,
+            "cent": -5,
+            "relg": -5,
+            "socl": 10,
+            "natl": 0,
+            "milt": 0,
+            "ecol": 0
         }
     },
     {
         "question": "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": -10,
+            "cent": 5,
+            "relg": 0,
+            "socl": -10,
+            "natl": 0,
+            "milt": 0,
+            "ecol": 0
         }
     },
     {
