@@ -135,13 +135,13 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist",        "Socialist",        "Social Democrat", "Neutral", "Liberal",    "Laissez-Faire", "Capitalist"]
+    soclArray = ["Communist",        "Socialist",        "Social Democrat", "Neutral", "Liberal",    "Laissez-Faire", "Capitalist"]
     poplArray = ["Direct Democrat",  "Populist",         "Liberal",         "Neutral", "Republican", "Aristocrat",    "Monarchist"]
     unitArray = ["Centralist",       "Statist",          "Legalist",        "Neutral", "Liberal",    "Libertarian",   "Anarchist"]
-    relgArray = ["Militant Atheist", "Secularist",       "Skeptic",         "Neutral", "Religious",  "Devout",        "Fundamentalist"]
-    soclArray = ["Revolutionary",    "Progressive",      "Reformist",       "Neutral", "Nostalgic",  "Conservative",  "Reactionary"]
-    natlArray = ["Cosmopolitan",     "Internationalist", "Peaceful",        "Neutral", "Patriotic",  "Nationalist",   "Chauvinist"]
-    miltArray = ["Expansionist",     "Hawkish",          "Interventionist", "Neutral", "Diplomatic", "Dovish",        "Pacifist"]
+    seclArray = ["Militant Atheist", "Secularist",       "Skeptic",         "Neutral", "Religious",  "Devout",        "Fundamentalist"]
+    progArray = ["Revolutionary",    "Progressive",      "Reformist",       "Neutral", "Nostalgic",  "Conservative",  "Reactionary"]
+    intrArray = ["Cosmopolitan",     "Internationalist", "Peaceful",        "Neutral", "Patriotic",  "Nationalist",   "Chauvinist"]
+    imprArray = ["Expansionist",     "Hawkish",          "Interventionist", "Neutral", "Diplomatic", "Dovish",        "Pacifist"]
     ecolArray = ["Druid",            "Green Thumb",      "Ecological",      "Neutral", "Mercantile", "Industrial",    "Rockefeller"]
 
     function setLabel(val,ary) {
@@ -191,26 +191,26 @@ stats"></a></div></noscript>
     setBarValue("ecological", ecological)
     setBarValue("industrial", industrial)	
 
-    document.getElementById("economic-label").innerHTML = setLabel(socialist, econArray)
+    document.getElementById("economic-label").innerHTML = setLabel(socialist, soclArray)
     document.getElementById("involvement-label").innerHTML = setLabel(populist, poplArray)
     document.getElementById("government-label").innerHTML = setLabel(unitary, unitArray)
-    document.getElementById("religion-label").innerHTML = setLabel(secular, relgArray)
-    document.getElementById("social-label").innerHTML = setLabel(progressive, soclArray)
-    document.getElementById("nationalism-label").innerHTML = setLabel(internationalist, natlArray)
-    document.getElementById("militarism-label").innerHTML = setLabel(imperialist, miltArray)
+    document.getElementById("religion-label").innerHTML = setLabel(secular, seclArray)
+    document.getElementById("social-label").innerHTML = setLabel(progressive, progArray)
+    document.getElementById("nationalism-label").innerHTML = setLabel(internationalist, intrArray)
+    document.getElementById("militarism-label").innerHTML = setLabel(imperialist, imprArray)
     document.getElementById("ecological-label").innerHTML = setLabel(ecological, ecolArray)
 
     ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - socialist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.socl - socialist), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.popl - populist), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.unit - unitary), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.relg - secular), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.socl - progressive), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.natl - internationalist), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.milt - imperialist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.secl - secular), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.prog - progressive), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.intr - internationalist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.impr - imperialist), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.ecol - ecological), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
