@@ -2,156 +2,156 @@ ideologies = [
     {
         "name": "World Workers Party", // "Marxism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "United Left Party", // "Democratic Socialism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "Social Democratic Party", // "Social Democracy"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "Liberal Party", // "Liberalism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "Green Party", // "Technocracy"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "Unity Party", // "Centrism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "One Courelli Party", // "Neo-Liberalism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "Liberty Party", // "Ultra-Capitalism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "Conservative Party", // "Conservatism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "National Front", // "Capitalist Fascism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "Dalinian Alliance", // "Fundamentalism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
     {
         "name": "Afafanua National Party", // "Right-Wing Populism"
         "stats": {
-            "econ": ,
+            "socl": ,
             "popl": ,
             "unit": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
+            "secl": ,
+            "prog": ,
+            "intr": ,
+            "impr": ,
             "ecol": 
         }
     },
