@@ -778,5 +778,5 @@ questions = [
             "milt": 0,
             "ecol": 0
         }
-    },
+    }
 ];
