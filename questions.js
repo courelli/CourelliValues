@@ -366,14 +366,14 @@ questions = [
     {
         "question": "It is very important to maintain law and order.",
         "effect": {
-            "econ": ,
-            "govt": ,
-            "cent": ,
-            "relg": ,
-            "socl": ,
-            "natl": ,
-            "milt": ,
-            "ecol": 
+            "econ": 0,
+            "govt": -10,
+            "cent": 5,
+            "relg": 0,
+            "socl": -10,
+            "natl": 0,
+            "milt": 0,
+            "ecol": 0
         }
     },
     {
