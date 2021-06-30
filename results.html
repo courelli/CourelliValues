@@ -204,10 +204,14 @@ stats"></a></div></noscript>
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.econ - socialist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.govt - democratic), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.cent - centralized), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.relg - secular), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.socl - progressive), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.natl - internationalist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.milt - imperialist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.ecol - ecological), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
