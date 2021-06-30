@@ -7,7 +7,7 @@ ideologies = [
             "cent": 85,
             "relg": 95,
             "socl": 95,
-            "natl": 65,
+            "natl": 75,
             "milt": 25,
             "ecol": 75
         }
