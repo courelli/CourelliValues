@@ -2,14 +2,14 @@ ideologies = [
     {
         "name": "World Workers Party", // "Marxism"
         "stats": {
-            "socl": ,
-            "popl": ,
-            "unit": ,
-            "secl": ,
-            "prog": ,
-            "intr": ,
-            "impr": ,
-            "ecol": 
+            "socl" <!-- Socialist -->       : ,
+            "popl" <!-- Populist -->        : ,
+            "unit" <!-- Unitary -->         : ,
+            "secl" <!-- Secular -->         : ,
+            "prog" <!-- Progressive -->     : ,
+            "intr" <!-- Internationalist -->: ,
+            "impr" <!-- Imperialist -->     : ,
+            "ecol" <!-- Ecological -->      : 
         }
     },
 ];
